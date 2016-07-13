@@ -13,7 +13,7 @@ class Login extends CI_Controller
     $password= $_POST['password'];
     $password = md5($password);
     $this->session->set_userdata($username,$password);
-    redirect(base_url('/category'), 'refresh');
+    redirect(base_url('/create'), 'refresh');
   }
 }
 //$_SESSION["username"]
