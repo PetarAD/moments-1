@@ -8,7 +8,7 @@ class Category extends CI_Model
   }
 
   public function sort($id) {
-    $sql =  $this->db->query("SELECT categories.category_name, moment.id, moment.name FROM categories INNER JOIN moment ON categories.category_id = moment.category WHERE categories.category_id = $id");
+    $sql =  $this->db->query("SELECT categories.category_name, moment.id, moment.name FROM categories INNER JOIN moment ON categories.category_id = moment.category WHERE categories.category_id = ?", [$id]);
     return $sql->result();
   }
 }

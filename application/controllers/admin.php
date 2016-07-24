@@ -27,8 +27,20 @@ class Admin extends CI_Controller
     $this->load->model('category');
     $id = $_POST['category'];
     $sort = $this->category->sort($id);
-    // var_dump($sort); die;
     $this->template->set('title', 'Контролен панел');
     $this->template->load('layouts/default', 'admin', compact('sort'));
+  }
+
+  public function search() {
+    $name =  $_POST['name'];
+    $this->load->model('search');
+    $search = $this->search->index($name);
+    if ($search) {
+      $this->template->set('title', 'Контролен панел');
+      $this->template->load('layouts/default', 'admin-search', compact('search'));
+    } else {
+      $this->template->set('title', 'Контролен панел');
+      $this->template->load('layouts/default', 'admin-search');
+    }
   }
 }

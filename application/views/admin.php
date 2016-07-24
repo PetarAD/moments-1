@@ -1,3 +1,9 @@
+<form action="<?= site_url('admin/search/')?>" method="post">
+  <fieldset>
+    <input type="text" name="name">
+    <input type="submit" value="Търси">
+  </fieldset>
+</form>
 <?php if (empty($sort)): ?>
 
   <form action="<?= site_url('/admin/sort/') ?>" method="post">
@@ -20,7 +26,7 @@
   <?php if (isset($sort)): ?>
     <?php foreach ($sort as $key => $value): ?>
       <h2><i class="fa fa-calendar" aria-hidden="true"></i>
-        <a href="<?= site_url('admin/show/'.$sort[$key]->id) ?>"><?= $sort[$key]->name ?></a></h2>
+        <a href="<?= site_url('admin/show/'.$sort[$key]->id) ?>"> <?= $sort[$key]->name ?></a></h2>
     <?php endforeach; ?>
   <?php else: ?>
   <?php foreach ($result as $key => $value): ?>
