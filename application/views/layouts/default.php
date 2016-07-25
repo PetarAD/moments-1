@@ -7,7 +7,8 @@
     <title>Аз изживявам</title>
     <link rel="stylesheet" href="<?= site_url('assets/layout/components/normalize-css/normalize.css') ?> ">
     <link rel="stylesheet" href="<?= site_url('assets/layout/components/font-awesome/css/font-awesome.min.css') ?> ">
-    <link rel="stylesheet" href="<?= site_url('assets/layout/main.css') ?> ">
+    <link rel="stylesheet" href="<?= site_url('assets/layout/main.css') ?>">
+    <script src="<?= site_url('assets/layout/components/jquery-3.1.0.min.js') ?>"></script>
     <!--[if lt IE 9]>
       <script src="<?= site_url('assets/html5shiv/dist/html5shiv.js') ?>"></script>
     <![endif]-->
