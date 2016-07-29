@@ -1,11 +1,10 @@
 <?php
 
-class Draw extends CI_Controller
+class Canvas extends CI_Controller
 {
   public function index()
   {
     $this->template->set('title', 'Сподели преживяване');
-    $this->template->load('layouts/default', 'draw');
+    $this->template->load('layouts/default', 'canvas');
   }
 }
-?>
