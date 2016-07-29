@@ -28,6 +28,8 @@
 Сподели вълнение</a></li>
     <li><a href="<?= site_url('/admin') ?>"><i class="fa fa-lock" aria-hidden="true"></i>
 Админ</a></li>
+<li><a href="<?= site_url('/canvas') ?>"><i class="fa fa-lock" aria-hidden="true"></i>
+Рисувай</a></li>
   </ul>
 </nav>
 
