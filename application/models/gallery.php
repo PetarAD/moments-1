@@ -12,5 +12,10 @@ class Gallery extends CI_Model
 >>>>>>> 1256068e7577dc648a2bc535f15bc4b89ef01ec2
     return true;
   }
+  public function getalldata(){
+        $q=$this->db->get('img');
+        return $q->result();
+  }
+
 }
 ?>

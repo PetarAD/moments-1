@@ -20,6 +20,10 @@ class Galleries extends CI_Controller
    $this->gallery->add( $name,$img);
    self::index();
   }
+  public function show(){
+        $this->load->model('gallery');
+
+  }
 }
 /*  public function show(){
        $this->load
