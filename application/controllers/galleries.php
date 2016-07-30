@@ -17,7 +17,7 @@ class Galleries extends CI_Controller
     $name=$_POST['name'];
     $img=$_POST['img'];
    $this->load->model('gallery');
-   $this->creates->add( $name,$img);
+   $this->gallery->add( $name,$img);
    self::index();
   }
 }
