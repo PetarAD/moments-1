@@ -18,7 +18,7 @@
           <fieldset><input type="submit" name="submit" value="Влез"></fieldset>
 
         </form>
-        <form class="register" action="register.php" method="POST">
+        <form class="register" action="<?= site_url('/register') ?>" method="POST">
 
           <fieldset>
             <label for="username">Потребителско име</label>
