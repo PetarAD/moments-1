@@ -1,3 +1,6 @@
+<?php if(isset($_SESSION)): ?>
+<p class="message"><i>Здравей, <?= $_SESSION['username'] ?></i></p>
+<?php endif; ?>
 <form  action="<?= site_url('/create/add') ?>" method="POST">
   <fieldset>
     <label for="name">Име на момента</label>

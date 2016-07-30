@@ -9,14 +9,10 @@ class Login extends CI_Controller
 
   public function index()
   {
-    session_unset();
-    session_destroy();
-    $username = $_POST['username'];
-    $password= $_POST['password'];
-    $password = md5($password);
-    $this->session->set_userdata([
-      'username' => $username
-    ]);
+    $username = trim($_POST['username']);
+    $password= trim($_POST['password']);
+    $password = sha1($password);
+    $_SESSION['username'] = $username;
     redirect('/create', 'refresh');
   }
 }
