@@ -1,6 +1,6 @@
 <div id="toolbar">
     <div id="rad">
-      raduis <span id="radval">10</span>
+      Радиус <span id="radval">10</span>
       <div id='decrad' class="radcontrol">
         -
       </div>
@@ -10,7 +10,7 @@
     </div>
 
 <div id="color">
-<div class="swatch active" style="background-color:black"></div>
+<div class="swatch active" style="background-color:brown"></div>
 <div class="swatch" style="background-color:green" ></div>
 <div class="swatch" style="background-color:blue"></div>
 <div class="swatch" style="background-color:red" ></div>
@@ -22,16 +22,16 @@
 <div class="swatch" style="background-color:orange" ></div>
 </div>
 <div id="clear">
-clear
+Изчисти
 </div>
 <div id="save">
-save
+Запази
 </div>
   </div>
   <canvas id="canvas">
-    some
+    Браузът не поддържа HTML5.
   </canvas>
-  <img id="canvasImg" alt="Right click to save me!">
+  <img id="canvasImg" alt="">
   <script type="text/javascript" src="<?php echo base_url('assets/js/main.js');?>"></script>
   <script type="text/javascript" src="<?php echo base_url('assets/js/radius.js');?>"></script>
   <script type="text/javascript" src="<?php echo base_url('assets/js/colors.js');?>"></script>
