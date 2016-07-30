@@ -1,11 +1,9 @@
-<form action="<?= site_url('/galleries/add') ?>" enctype="multipart/formmethod="post">
+<form action="<?= site_url('/galleries/add') ?>">
   <input type="text" name="name" placeholder="Име">
   <input type="file" name="img" >
   <input type="submit" name="submit" value="Създай">
 </form>
-<?php
-foreach ($this->db->getalldata() as $row) {
-  echo $row->name;
-}
- ?>
- <img src="<?php echo site_url('img/'.$row->img)?>" />
+<pre>
+<?php foreach ($result as $key=> $value): ?>
+  <img src="data:image/jpeg;base64,<?= base64_encode($result[$key]->img) ?>" />
+<?php endforeach; ?>

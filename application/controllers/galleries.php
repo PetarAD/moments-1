@@ -9,8 +9,10 @@ class Galleries extends CI_Controller
   }
   public function index()
   {
+    $this->load->model('gallery');
+    $result = $this->gallery->getalldata();
     $this->template->set('title', 'Категории');
-    $this->template->load('layouts/default', 'gallery');
+    $this->template->load('layouts/default', 'gallery', compact('result'));
   }
   public function add()
   {
