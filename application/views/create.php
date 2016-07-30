@@ -1,4 +1,4 @@
-<?php if(isset($_SESSION)): ?>
+<?php if(isset($_SESSION['username'])): ?>
 <p class="message"><i>Здравей, <?= $_SESSION['username'] ?></i></p>
 <?php endif; ?>
 <form  action="<?= site_url('/create/add') ?>" method="POST">
