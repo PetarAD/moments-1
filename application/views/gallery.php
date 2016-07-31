@@ -1,11 +1,13 @@
-<form action="<?= site_url('/galleries/add') ?>" enctype="multipart/formmethod="post">
-  <input type="text" name="name" placeholder="Име">
-  <input type="file" name="img" >
-  <input type="submit" name="submit" value="Създай">
+<form action="<?= site_url('/galleries/add') ?>" method="POST">
+  <fieldset>
+   <label for="name">Име на снимката:</label>
+    <input id="name" type="text" name="name" placeholder="Напишете име на снимката">
+  </fieldset>
+  <fieldset>
+  <label for="img">Адрес на снимката:</label>
+  <input id="img" type="text" name="img" placeholder="Напишете адреса на снимката">
+  </fieldset>
+  <fieldset>
+    <input type="submit" name="submit" value="Създай">
+  </fieldset>
 </form>
-<?php
-foreach ($this->db->getalldata() as $row) {
-  echo $row->name;
-}
- ?>
- <img src="<?php echo site_url('img/'.$row->img)?>" />
