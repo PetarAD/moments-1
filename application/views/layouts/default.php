@@ -32,6 +32,8 @@
 Рисувай</a></li>
 <li><a href="<?= site_url('/galleries') ?>"><i class="fa fa-picture-o" aria-hidden="true"></i>
 Качи снимка</a></li>
+<li><a href="<?= site_url('/galleries/show') ?>"><i class="fa fa-picture-o" aria-hidden="true"></i>
+Галерия</a></li>
   </ul>
 </nav>
 
@@ -53,6 +55,8 @@
 Рисувай</a></li>
         <li><a href="<?= site_url('/galleries') ?>"><i class="fa fa-picture-o" aria-hidden="true"></i>
 Качи снимка</a></li>
+<li><a href="<?= site_url('/galleries/show') ?>"><i class="fa fa-picture-o" aria-hidden="true"></i>
+Галерия</a></li>
           </ul>
         </nav>
         <ul class="social flex-3">
