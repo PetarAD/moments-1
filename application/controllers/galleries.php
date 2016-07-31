@@ -9,22 +9,22 @@ class Galleries extends CI_Controller
   }
   public function index()
   {
-    $this->load->model('gallery');
-    $result = $this->gallery->getalldata();
     $this->template->set('title', 'Категории');
-    $this->template->load('layouts/default', 'gallery', compact('result'));
+    $this->template->load('layouts/default', 'gallery');
   }
   public function add()
   {
-    $name=$_POST['name'];
-    $img=$_POST['img'];
+    $name = trim($_POST['name']);
+    $img = trim($_POST['img']);
    $this->load->model('gallery');
    $this->gallery->add( $name,$img);
-   self::index();
+   redirect('/galleries/show', 'refresh');
   }
   public function show(){
-        $this->load->model('gallery');
-
+       $this->load->model('gallery');
+    $result = $this->gallery->getalldata();
+    $this->template->set('title', 'Категории');
+    $this->template->load('layouts/default', 'gallery-show', compact('result'));
   }
 }
 /*  public function show(){

@@ -30,6 +30,8 @@
 Админ</a></li>
 <li><a href="<?= site_url('/canvas') ?>"><i class="fa fa-paint-brush" aria-hidden="true"></i>
 Рисувай</a></li>
+<li><a href="<?= site_url('/galleries') ?>"><i class="fa fa-picture-o" aria-hidden="true"></i>
+Качи снимка</a></li>
   </ul>
 </nav>
 
@@ -49,6 +51,8 @@
         Админ</a></li>
         <li><a href="<?= site_url('/canvas') ?>"><i class="fa fa-paint-brush" aria-hidden="true"></i>
 Рисувай</a></li>
+        <li><a href="<?= site_url('/galleries') ?>"><i class="fa fa-picture-o" aria-hidden="true"></i>
+Качи снимка</a></li>
           </ul>
         </nav>
         <ul class="social flex-3">

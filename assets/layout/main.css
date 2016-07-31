@@ -75,7 +75,7 @@ nav.main-navigation ul {
 }
 
 nav.main-navigation ul li {
-  flex: 1 0 0;
+  flex: 1 0  auto;
 }
 
 nav.main-navigation ul li a {
@@ -84,7 +84,7 @@ nav.main-navigation ul li a {
 
 nav.main-navigation ul a:link, nav.main-navigation ul a:visited{
   text-align: center;
-  padding: 20px 10px;
+  padding: 20px 2px;
   background-color: #a8743b;
   border-radius: 6px;
   box-shadow: inset 0 0 1px #000;
@@ -353,4 +353,56 @@ margin-right: 20px;
   font-style: normal;
   text-align: right;
   background-color: rgba(255, 230, 0, 0.6);
+}
+
+.gallery {
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: hsla(0,0%,100%,.3);
+    box-shadow: 0 1px 2px rgba(0,0,0,.3)
+}
+
+.gallery h1 {
+    margin: 40px 0;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center
+}
+
+.gallery>div {
+    position: relative;
+    float: left;
+    padding: 5px
+}
+
+.gallery>div:hover {
+    z-index: 1
+}
+
+.gallery>div:hover>img {
+    -webkit-transform: scale(1.7);
+    transform: scale(1.7);
+    -webkit-transition: .3s transform;
+    transition: .3s transform
+}
+
+.gallery>div>img {
+    display: block;
+    box-shadow: 0 0 2px #000;
+    width: 200px;
+    -webkit-transition: .1s transform;
+    transition: .1s transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.cf:after,.cf:before {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.cf:after {
+    clear: both
 }
